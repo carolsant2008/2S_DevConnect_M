@@ -1,0 +1,43 @@
+/* 1 forma de usar a fonte */
+/* @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap'); */
+
+/* 2 forma de usar a fonte */
+@font-face {
+    font-family: Billabong;
+    src: url(../assets/fonts/Billabong/billabong.ttf),
+        url(../assets/fonts/Billabong/billabong_regular.otf);
+}
+
+/* variaveis */
+:root {
+    --cor-preto: #000000;
+    --cor-roxa: #6A0DAD;
+    --cor-branco: #FFFFFF;
+    --cor-verde-agua: #7FFFD4;
+    --cor-azul: #1E90FF;
+    --cor-cinza-medio: #E5E5E5;
+
+    --borda: 1px solid var(--cor-preto);
+    --borda-arredondada: 2px;
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+/* SELETOR GLOBAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe ui", sans-serif;
+}
+
+body {
+    background-color: var(--cor-branco);
+}
+
+h1{
+    position: absolute; /*altera a posicao do elemneto */
+    z-index: -1; /* camadas de elemento*/
+    opacity: 0; /*opacidade*/
+}
