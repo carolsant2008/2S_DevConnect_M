@@ -16,6 +16,7 @@
     --cor-verde-agua: #7FFFD4;
     --cor-azul: #1E90FF;
     --cor-cinza-medio: #E5E5E5;
+    --cor-cinza-escuro: #494747;
 
     --borda: 1px solid var(--cor-preto);
     --borda-arredondada: 2px;
@@ -36,8 +37,39 @@ body {
     background-color: var(--cor-branco);
 }
 
-h1{
-    position: absolute; /*altera a posicao do elemneto */
-    z-index: -1; /* camadas de elemento*/
-    opacity: 0; /*opacidade*/
+h1 {
+    position: absolute;
+    /*altera a posicao do elemneto */
+    z-index: -1;
+    /* camadas de elemento*/
+    opacity: 0;
+    /*opacidade*/
+}
+
+/* formulario */
+
+.formulario-botao-roxo {
+    background-color: var(--cor-roxa);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.formulario-campos>input {
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor-cinza-medio);
+
+    color: var(--cor-cinza-escuro);
+    font-size: var(--tamanho-fonte-sm);
+    border-radius: var(--borda-arredondada);
+}
+
+.formulario-campos>label {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuros);
+    font-weight: 600s;
 }

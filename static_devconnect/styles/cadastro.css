@@ -15,7 +15,6 @@ main>div {
 }
 
 form {
-    /* background-color: beige; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,30 +35,11 @@ form {
 
 }
 
-
-
-form>p {
-    text-transform: uppercase;
-    font-size: var(--tamanho-fonte-sm);
-    color: var(--cor-cinza-escuro);
-}
-
-form>a, #secao-cadastro>p>a {
-    color: var(--cor-azul);
-    font-size: var(--tamanho-fonte-sm);
-    text-decoration: none;
-}
-
-#secao-cadastro>p{
-    color: var(--cor-cinza-escuro);
-    font-size: var(--tamanho-fonte-md);
-}
-
 .estilo-formulario {
-    width: 50%;
-    max-width: 342px;
+    width: 100%;
+    max-width: 400px;
     background-color: var(--cor-branco);
-    border: var(--borda);
+    border: var(--borda); 
 }
 
 #secao-cadastro {
@@ -74,11 +54,15 @@ main>div>p {
     font-size: var(--tamanho-fonte-sm);
 }
 
-#secao-instalacao {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+#campo-file{
+    display: none;
 }
 
+#labell{
+    display: inline-block;
+    width: 100%;
+    color: blueviolet;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+}
