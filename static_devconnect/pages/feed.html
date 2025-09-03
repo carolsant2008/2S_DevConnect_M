@@ -37,7 +37,7 @@
                     <img src="../assets/images/icone-coracao-azul.svg" alt="">
                 </a>
                 <a href="#">
-                    <img id="foto-perfil" src="../assets/images/1000330022.jpg" alt="">
+                    <img class="foto-perfil" src="../assets/images/1000330022.jpg" alt="">
                 </a>
             </div>
         </nav>
@@ -145,11 +145,12 @@
 
             <!-- Inicio seção publicação -->
 
-            <section id="criar-publi">
-                <h2>publicação</h2>
+            <section id="criar-publi" class="estilo-formulario">
+                <h2>Publicação</h2>
+                <!-- fim da seção publicação -->
 
                 <form action="">
-                    <textarea name="" id=""></textarea>
+                    <textarea name="" id="" placeholder="Digite a descrição do post..."></textarea>
 
                     <footer>
                         <div class="formulario-campos">
@@ -157,11 +158,51 @@
                             <input type="file" id="campo-upload">
                         </div>
 
-                        <button type="submit" class="formulario-botao-roxo">Entrar</button>
+                        <button type="submit" class="formulario-botao-roxo">Postar</button>
 
                     </footer>
                 </form>
             </section>
+            <!-- final da section -->
+
+            <!-- inicio da section -->
+            <section id="publicacoes">
+                <!-- carde publi -->
+                <article class="card-publi">
+                    <header>
+                        <a href="#">
+                            <img class="foto-perfil" src="../assets/images/1000330022.jpg" alt="">
+                            caah.mvk_
+                        </a>
+                    </header>
+                    <figure>
+                        <img class="imagem-publicacao" src="../assets/images/1000321554.jpg" alt="">
+                        <figcaption>
+                            caah.mvk_:
+                            <p class="descricao-publicacao"> oie pessual do insta da minha irmã</p>
+                        </figcaption>
+
+                        <div class="interacoes-publicacoes">
+                            <button type="button">
+                                <img src="..//assets/images/icone-coracao-preto.svg" alt="">
+                            </button>
+
+                            <button type="button">
+                                <img src="..//assets/images/icone-comentario-preto.svg" alt="">
+                            </button>
+
+                            <span>250 curtidas</span>
+                        </div>
+
+                        <button type="button"> Ver todos os comentários... </button>
+
+                    </figure>
+                </article>
+
+            </section>
+
+            <!-- final da section -->
+
         </div>
     </Main>
     <!-- FIM MAIN -->

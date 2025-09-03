@@ -31,6 +31,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Segoe ui", sans-serif;
+    outline-color: #1E90FF;
 }
 
 body {
@@ -87,10 +88,14 @@ h1 {
 #texto-upload{
     display: inline-block;
     width: 100%;
-    color: blueviolet;
-    background-color: aqua;
+    max-width: 300px;
+    min-height: 35px;
+    padding: 5px;
+    color: var(--cor-cinza-escuro);
+    background-color:var(--cor-cinza-medio);
     text-align: center;
-    padding: 10px;
+    border-radius: var(--borda-arredondada);
+    font-weight: 500;
 }
     
 /* cabecalho */
@@ -130,7 +135,7 @@ h1 {
     align-items: center;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover;/*  mantent a proporcao com um zoom para adaptar ao tamanho do elemento */
