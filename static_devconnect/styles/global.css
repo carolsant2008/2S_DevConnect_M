@@ -27,7 +27,7 @@
 
 /* SELETOR GLOBAL */
 * {
-    padding: 0;
+    padding: 1px;
     margin: 0;
     box-sizing: border-box;
     font-family: "Segoe ui", sans-serif;
@@ -35,7 +35,7 @@
 }
 
 body {
-    background-color: var(--cor-branco);
+    background-color: var(--cor-cinza-medio);
 }
 
 h1 {
@@ -71,7 +71,7 @@ h1 {
 
 .formulario-campos>label {
     font-size: var(--tamanho-fonte-sm);
-    color: var(--cor-cinza-escuros);
+    color: var(--cor-cinza-escuro);
     font-weight: 600s;
 }
 
@@ -100,7 +100,7 @@ h1 {
     
 /* cabecalho */
 #cabecalho {
-    background-color: var(#FFFFFF);
+    background-color: var(--cor-branco);
     width: 100%;
     height: 80px;
     display: flex;

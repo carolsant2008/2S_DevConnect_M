@@ -1,0 +1,111 @@
+  main {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+  }
+
+  .perfil-conteiner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding: 30px;
+  }
+
+  .foto-perfil-destacada {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+
+  .perfil-info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+  }
+
+  .username {
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .perfil-detalhes {
+      display: flex;
+      gap: 35px;
+      font-size: var(--tamanho-fonte-sm);
+  }
+
+  .perfil-detalhes>span {
+      font-size: var(--tamanho-fonte-sm);
+  }
+
+  .perfil-acoes {
+      font-size: var(--tamanho-fonte-sm);
+  }
+
+  .perfil-acoes>a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: var(--cor-roxa);
+      gap: 25%;
+  }
+
+  .titulo-publicacoes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: var(--tamanho-fonte-md);
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 20%;
+      margin: 20px auto;
+      border-bottom: 1px solid var(--cor-cinza-escuro);
+      padding-bottom: 10px;
+      
+  }
+
+  #publicacoes>h2>a {
+      text-decoration: none;
+      color: var(--cor-roxa)
+  }
+
+  .card-publi {
+      max-width: 600px;
+      margin: 0 auto 25px auto;
+      padding: 20px;
+      background-color: var(--cor-cinza-medio);
+      border: var(--borda);
+  }
+
+  #interacoes-publicacao {
+
+      display: flex;
+      width: 88px;
+      flex-wrap: wrap;
+      gap: 25px;
+      order: 1;
+      margin-left: 15px;
+      margin-top: 15px;
+  }
+
+  .interacoes-publicacao>button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+  }
+
+ #interacoes-publicacao>button {
+    background-color: transparent;
+    border: none;
+    color: var(--cor-cinza-);
+    font-size: var(--tamanho-fonte-sm);
+    order: 3;
+    margin-left: 15px;
+    align-items: flex-start;
+
+}

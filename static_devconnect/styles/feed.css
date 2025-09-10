@@ -8,13 +8,15 @@ main {
 }
 
 .container-flex-publi {
-    /* background-color: blueviolet; */
+    background-color: var(--cor-branco); 
     /* height: 700px; */
     width: 90%;
     max-width: 900px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    border: var(--borda);
+    color: var(--cor-preto);
 }
 
 #storys {
@@ -128,6 +130,7 @@ main {
 .card-publi>figure {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .imagem-publicacao {
@@ -170,14 +173,14 @@ main {
     cursor: pointer;
 }
 
-.card-publi>figure>button{
+.card-publi>figure>button {
     background-color: transparent;
     border: none;
 
-    color: var(--cor-cinza-medio);
+    color: var(--cor-cinza-);
     font-size: var(--tamanho-fonte-sm);
 
     order: 3;
-     margin-left: 15px;
-  align-items: flex-start;
+    margin-left: 15px;
+    align-items: flex-start;
 }
