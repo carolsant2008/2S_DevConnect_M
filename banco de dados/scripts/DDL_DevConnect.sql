@@ -18,7 +18,6 @@ SELECT * FROM tb_usuario;
 
 CREATE TABLE tb_publicacao(
  id       INT         IDENTITY (1,1)        PRIMARY KEY
-,nome_usuario         NVARCHAR (255)        UNIQUE         PRIMARY KEY
 ,imagem_url           NVARCHAR (255)
 ,descricao            NVARCHAR (255)        NOT NULL
 ,data_publicacao      DATE                  NOT NULL
@@ -30,10 +29,11 @@ GO
 
 SELECT * FROM tb_publicacao;
 
+
 CREATE TABLE tb_curtida(
- id   INT       IDENTITY  (1,1)       PRIMARY KEY
-,id_usuario     INT 
-,id_publicacao  INT
+ id_curtida     INT       IDENTITY  (1,1)       PRIMARY KEY
+,id_usuario     INT       not null
+,id_publicacao  INT       not null
 
  ,FOREIGN KEY (id_usuario)         REFERENCES   tb_usuario(id)
  ,FOREIGN KEY (id_publicacao)      REFERENCES   tb_publicacao(id)
@@ -43,14 +43,28 @@ GO
 SELECT * FROM tb_curtida;
 
 CREATE TABLE tb_comentario(
- id  INT       IDENTITY(1,1)   
-,id_comentario    INT               
+ id_comentario    INT       IDENTITY(1,1)   PRIMARY KEY
+,texto            NVARCHAR(255)             NOT NULL  
+,data_coment      DATE                      NOT NULL
+,id_publicacao    INT                       NOT NULL
 ,id_usuario       INT 
 
-,PRIMARY KEY (id_comentario)      
+     
 ,FOREIGN KEY (id_usuario)         REFERENCES   tb_usuario(id)
-,FOREIGN KEY (id_
+,FOREIGN KEY (id_publicacao)      REFERENCES   tb_publicacao(id)
 );
 GO
 
 SELECT * FROM tb_comentario;
+
+CREATE TABLE tb_seguidor(
+    id_usuario_seguidor INT NOT NULL,
+    id_seguindo         INT NOT NULL
+
+    PRIMARY KEY(id_seguindo, id_usuario_seguidor),
+    FOREIGN KEY(id_usuario_seguidor) REFERENCES tb_usuario(id),
+    FOREIGN KEY(id_seguindo) REFERENCES tb_usuario(id)
+);
+GO
+
+SELECT * FROM tb_seguidor;
